@@ -1,0 +1,28 @@
+removed all the .git folders from the sub folders as well as from root.
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M master (if you are committing from the branch switch to branch)
+git remote remove origin (if you have any)
+git remote add origin https://github.com/abcd1234/xxxxxxx.git
+git push -u origin master
+
+
+
+
+
+
+(1) rm -rf .git/
+
+(2) git init
+
+(3) git remote add origin https://repository.remote.url 1.6k
+
+(4) git commit -m “Commit message”
+
+(5) git push -f origin master
+
+Note that all git configs like remote repositories for this repository are cleared in step 1. So, you have to setup all remote repository URLs again.
+
+Also, take care of the -f in step 5 : The remote already has some code base with n commits, and you’re trying to make all those changes into a single commit. So, force-pushing the changes to remote is necessary.
