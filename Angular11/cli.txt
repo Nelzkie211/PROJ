@@ -1,0 +1,2 @@
+ng new angular-routing-demo
+ng generate module app-routing --module app --flat

@@ -1,0 +1,5 @@
+// npm i node-sass
+// npm run sass
+// npm install --save @fortawesome/fontawesome-free
+// npm i gh-pages
+//npm run deploy

@@ -1,0 +1,46 @@
+.sidebar {
+  width: 200px;
+  background-color: rgba(43, 134, 194, 0.25);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  color: #FFFFFF;
+  padding: 10px 25px;
+  text-decoration: none;
+  border: 1px solid rgba(43, 134, 194, 0.5);
+  background: rgba(43, 134, 194, 0.25)
+}
+
+.sidebar a:first-child{
+  background: rgba(43, 134, 194, 0.5)
+}
+
+.backdrop{
+  filter:blur('5px');
+  -webkit-filter: blur(4px);
+  height:100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .sidebar {
+      display: none;
+      width: 210px;
+  }
+  .sidebar.hide-sidebar{
+      display: block;
+      z-index: 1;
+  }
+  .sidebar a {
+      font-size: 16px;
+      padding: 13px 28px;
+  }
+
+}

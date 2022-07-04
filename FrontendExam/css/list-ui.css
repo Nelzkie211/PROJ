@@ -1,0 +1,113 @@
+@import "navbar.css";
+@import "sidebar.css";
+
+/* Content */
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+.content .container-fluid .row .col{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+}
+
+.content .container-fluid .row .col button{
+    width: 104px;
+    height: 29px;
+    background: #2B86C2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+/* content table */
+
+.table thead tr th{
+    background: rgba(43, 134, 194, 0.25);
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    height: 43px;
+    text-align:center
+}
+
+.table tbody tr td button.edit-button{
+    width: 68px;
+    height: 22px;
+    background: #2B86C2;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: none;
+}
+
+.table tbody tr td{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.table tbody tr:nth-child(even){
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    background: rgba(43, 134, 194, 0.1);
+}
+
+/* page link */
+.page-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+a.page-link{
+    height: 29px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background: rgba(43, 134, 194, 0.25);
+    pointer-events: none;
+}
+a.page-link.active{
+    background: #2B86C2;
+    pointer-events: none;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+
+
+    /* content */
+    div.content {margin-left: 0;}
+    nav.navbar-light button.toggle-button{
+        display: block;
+    }
+    .navbar-text{
+        display: none;
+    }
+    .content .container-fluid .row .col{
+        font-size: 24px;
+    }
+
+    .content .container-fluid .row .col button{
+        width: 110px;
+        font-size: 16px;
+    }
+
+
+}

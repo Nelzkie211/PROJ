@@ -1,0 +1,47 @@
+nav.navbar-light {
+  height: 48px;
+  background: #2B86C2;
+}
+
+nav.navbar-light a.navbar-brand{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+nav.navbar-light a.navbar-brand:hover{
+  color: #FFFFFF;
+}
+
+nav.navbar-light span.navbar-text{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+nav.navbar-light button{
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+i.fa-solid {
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  /* navbar */
+  nav.navbar-light a.navbar-brand{
+      font-size: 20px;
+  }
+  i.fa-solid {
+      font-size: 30px;
+  }
+
+
+
+
+}
