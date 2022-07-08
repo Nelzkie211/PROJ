@@ -1,0 +1,8 @@
+npm init -y
+npm i bcrypt dotenv express mongoose
+npm i nodemon --save-dev
+
+
+Go to Control Panel and click on Administrative Tools.
+Double click on Services. A new window opens up.
+Search MongoDB.exe. Right click on it and select Start.
